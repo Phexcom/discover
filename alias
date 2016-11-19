@@ -1,6 +1,6 @@
 # cp /opt/discover/alias /root/.bash_aliases ; source /root/.bash_aliases
 
-dsn=$(grep 'nameserver' /etc/resolv.conf | awk '{print $2}')
+dns=$(grep 'nameserver' /etc/resolv.conf | awk '{print $2}')
 ip=$(ifconfig | grep 'broadcast' | awk '{print $2}')
 mac=$(ifconfig | grep 'ether' | awk '{print $2}')
 user=$(whoami)
